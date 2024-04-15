@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="code.js"></script>
+    <style>
+  #board {
+    width: 70%;
+    height: 400px;
+    background-color: #f0f0f0;
+    overflow: auto;
+    padding: 10px;
+    float: left;
+  }
+  #removedPanel {
+    width: 29%;
+    height: 400px;
+    background-color: #e0e0e0;
+    padding-left: 25px;
+    position: absolute;
+    left: 72%;
+  }
+  .note {
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    background-color: #fff;
+  }
+  .removed {
+  background-color: #e0e0e0;
+}
+.important {
+    background-color: yellow;
+}
+  header {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: bold;
+    background-color: rgb(76, 201, 250);
+  }
+</style>
+</head>
+<body>
+    <header>CIT Note Taker</header>
+    <div id="board">
+      <button id="addNote">Add Note</button>
+      <button id="removeNotes">Remove Notes</button>
+    </div>
+    <div id="removedPanel">
+      <h3>Temporarily Removed Notes</h3>
+    </div>
+</body>
+</html>
